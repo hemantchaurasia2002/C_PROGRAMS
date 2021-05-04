@@ -9,15 +9,14 @@ void area
  cout<<area;
 }*/
 
+#include <stdlib.h>
+
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int b,h;
-    cin>>b;
-    cin>>h;
-   
+    int b=4,h=5;
     float area;
 	
     area=(float(b * h)/2);
