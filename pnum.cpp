@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <stdlib.h>
 
@@ -5,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int n,count=0;
     cout<<"Enter a suitable value for n : ";
     cin>>n;
 
@@ -15,16 +16,23 @@ int main()
     }
     else
     {
-        cout<<"Factors are : "<<endl;    
+         
         for(int i=1;i<=n;i++)
         {   
             
             if(n%i==0)
             {
-                cout<<i<<endl;
+                count++; 
             }
         }
     }
-    
+    if(count==2)
+    {
+        cout<<"It is a prime number";
+    }
+    else
+    {
+        cout<<"It is not a prime number";
+    }
     return 0;
 }
